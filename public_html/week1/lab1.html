@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        
+  <!--
+        Step 1
+        Create a JavaScript Variables each with it's own type. 
+        String, boolean, number.  
+        Use == and === to compare each one with a console.log 
+        using IF statements.  
+       -->
+        
+       <script type="text/javascript"> 
+           
+           var string1 = "java";
+           var string2 = "sql";
+           var number1 = 0;
+           var number2 = 10;
+           var bool1 = false;
+           var bool2 = true;
+           
+       /* 
+        * Comparision with ===                  -----------------------------
+        */         
+       
+          if ( string1 === string2 ) {
+            console.log ("java = sql");              
+          } else {
+            console.log ("java is not the same as sql");
+          }
+          
+          if ( number1 === number2 ) {
+            console.log ("same number");
+          } else {
+            console.log ("Different numbers");
+          }
+          
+          if ( bool1 === bool2 ) {
+              console.log ("The same decision");
+          } else {
+              console.log ("Different decision !!!");
+          }
+          
+          
+           /* 
+        * Comparision with ==                   -----------------------------
+        * STRAIGHT FORWARD COMPARISION BETWEEN THE SAME VARIABLES USING THE == THROWS
+          NOT LOGIC RESULTS
+        */  
+       
+          
+           if ( string1 == string2 ) {
+            console.log ("java = sql");              
+          } else {
+            console.log ("java is not the same as sql");
+          }
+          
+          if ( number1 == number2 ) {
+            console.log ("same number");
+          } else {
+            console.log ("Different numbers");
+          }
+          
+          if ( bool1 == bool2 ) {
+              console.log ("The same decision");
+          } else {
+              console.log ("Different decision !!!");
+          }
+          
+             /* 
+        * Comparision with the other types      -----------------------------
+        * COMPARING A NUMBER WITH A BOOL WHICH HAS DIFFERENT VALUE THE !==
+          IS EFFECTIVE AND CORRECT THE MISTAKE
+        */  
+           
+           
+           
+           if ( number1 !== bool1) {
+               console.log ("Different type of variable");
+           }else {
+               console.log ("Same type of variable ")
+           }
+           
+            if ( number1 != bool1) {
+               console.log ("Different type of variable");
+           }else {
+               console.log ("Same type of variable WRONGGG by using the wrong operator");
+           }
+           
+                      
+           if ( string1 == number1 ) {
+               console.log ( "The same variable")
+           }
+       
+       
+       /* 
+        * STEP 2 For loop 0 to 10      -----------------------------
+        */  
+       
+       for ( i = 0; i <= 10; i++ ) {
+           console.log (i);
+       }
+           
+    
+        console.log("");
+       
+       /* 
+        * For loop 10 to 0      -----------------------------
+        */  
+       for ( x = 10; x >= 0; --x ) {
+           console.log (x);
+       }
+       
+
+</script>
+
+
+    </body>
+</html>
